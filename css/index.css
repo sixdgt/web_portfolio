@@ -169,34 +169,20 @@ nav a:hover {
 
 #keep-in-touch {
     background-color: rgb(192, 192, 192);
+    padding: 5%;
 }
 
+/* class */
 .keep-in-touch {
-    display: flex;
-    flex-direction: row;
+    width: 100%;
+    /* display: flex;
+    flex-direction: row; */
     justify-content: space-around;
-}
-
-.keep-in-touch ul {
-    list-style: none; /* removes dot from list */
-}
-
-.keep-in-touch ul li {
-    margin-bottom: 10%;
-    font-family: 'Roboto Mono';
-    font-size: 1.5rem;
-    font-weight: 300;
-}
-
-i {
-    color: rgb(92, 118, 148);
-}
-
-.keep-in-touch ul a {
-    text-decoration: none; /* removes underline from link */
+    padding: 0% 5%;
 }
 
 .contact form {
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -204,6 +190,60 @@ i {
 
 input {
     width: 100%;
-    margin: 5%;
+    margin: 1% 5%; /* margin 1% is for top and bottom & 5% is for left and right */
     height: 30px;
+}
+
+/* footer */
+
+/* example for flex model */
+.footer {
+    background-color: rgb(92, 118, 148);
+    width: 100%;
+    display: flex;
+    gap: 15px;
+    flex-direction: row;
+    justify-content: space-around;
+    color: white;
+    padding: 2% 0%;
+}
+
+.social ul {
+    list-style: none; /* removes dot from list */
+}
+
+.social ul li {
+    margin-bottom: 1%;
+    font-family: 'Roboto Mono';
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+i {
+    color: rgb(255, 255, 255);
+}
+
+.social ul a {
+    text-decoration: none; /* removes underline from link */
+    color: white;
+}
+
+.footer ul {
+    list-style: none;
+}
+
+hr {
+    background-color: white;
+    height: 3px;
+}
+
+/* copyright */
+.copyright {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1% 0%;
+    color: white;
+    background-color: rgb(66, 94, 125);
 }
