@@ -9,6 +9,7 @@
 header {
     background-image: linear-gradient(0deg, rgb(184, 184, 184, 0.5), #5c7694), url('../images/bg.png');
     height: 700px;
+    width: 100%;
 }
 
 nav {
@@ -22,11 +23,14 @@ nav {
     padding: 20px 20px;
     font-size: 1.5em;
     box-shadow: 0px 1px 10px #000000;
+    overflow: hidden;
+    z-index: 1;
 }
 
 .nav {
     position: fixed;
     background-color: rgb(92, 118, 148);
+    overflow: hidden;
 }
 
 nav li {
@@ -107,6 +111,7 @@ nav a:hover {
     flex-direction: row;
     justify-content: space-between;
     padding: 10% 5%;
+    width: 100%;
 }
 
 .text h1{
@@ -151,6 +156,7 @@ nav a:hover {
     align-items: center;
     justify-content: center;
     border-top-left-radius: 150px;
+    /* z-index: -1; */
 }
 
 .shape h1{
@@ -247,3 +253,55 @@ hr {
     color: white;
     background-color: rgb(66, 94, 125);
 }
+
+/* media query */
+@media screen and (max-width: 380px) {
+}
+
+@media (min-width: 375px) and (max-width: 700px) {
+}
+
+@media (min-width: 375px){
+}
+
+@media (max-width: 375px){
+    .pic {
+        width: 100px;
+        height: 100px;
+    }
+
+    .header-content {
+        background-color: red;
+    }
+
+    .nav {
+        font-size: 10px;
+        background-color: black;
+        font-weight: 200;
+        font-family: 'Roboto Mono';
+    }
+
+    .shape {
+        width: 70%;
+        height: 50px;
+        background-color: rgb(92, 118, 148);
+        position: absolute;
+        left: 30%;
+        top: 30%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-top-left-radius: 150px;
+        /* z-index: -1; */
+    }
+    
+    .shape h1{
+        color: white;
+        font-family: 'Roboto Mono';
+        font-weight: 200;
+        font-size: 1rem;
+    }
+}
+
+@media screen, print {
+} 
